@@ -318,7 +318,7 @@ class listener implements EventSubscriberInterface
 	*/
 	public function privacy_redirect($event)
 	{
-	   if ($this->config['privacy_policy_enable'] && $this->config['privacy_policy_force'] && $this->user->data['user_accept_date'] == 0 && !$this->user->data['is_bot'] && $this->user->data['user_id'] !== ANONYMOUS)
+		if ($this->config['privacy_policy_enable'] && $this->config['privacy_policy_force'] && $this->user->data['user_accept_date'] == 0 && !$this->user->data['is_bot'] && $this->user->data['user_id'] !== ANONYMOUS)
 		{
 			redirect($this->helper->route('david63_privacypolicy_acceptance'));
 		}
@@ -431,7 +431,7 @@ class listener implements EventSubscriberInterface
 		if ($this->config['privacy_policy_anonymise'])
 		{
 			$data 					= $event['data'];
-	   		$from_user_ip 			= $data['from_user_ip'];
+			$from_user_ip 			= $data['from_user_ip'];
 			$from_user_ip 			= $this->config['privacy_policy_anonymise_ip'];
 			$data['from_user_ip'] 	= $from_user_ip;
 			$event['data'] 			= $data;

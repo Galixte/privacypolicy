@@ -43,5 +43,3 @@ $lang = array_merge($lang, array(
 	'ACL_A_PRIVACY_VIEW'	=> 'Peut voir les données personnelles des membres.',
 	'ACL_U_PRIVACY_VIEW'	=> 'Peut voir ses données personnelles.',
 ));
-
-?>

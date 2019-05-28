@@ -53,6 +53,6 @@ $lang = array_merge($lang, array(
 
 	'USERNAME'			=> 'Nom d’utilisateur',
 	'USER_IPS'			=> 'Autres adresses IP utilisées',
-	
+
 	'VERSION'			=> 'Version',
 ));
